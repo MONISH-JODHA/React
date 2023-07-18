@@ -1,12 +1,17 @@
 import React from 'react'
-import './App.css';
 import NavBar from './components/NavBar';
+import TextForm from './components/TextForm';
 
 
 function App() {
   return (
     <>
-    <NavBar title="Utitii" home="Home" about="About Us"/>
+      <NavBar />
+      <div className='container'>
+        <TextForm heading="Enter the text below" title="Text Analyser" />
+
+      </div>
+
     </>
   );
 }

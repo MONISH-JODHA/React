@@ -31,7 +31,13 @@ export default function NavBar(props) {
 }
 
 NavBar.prototypes={
-    title:PropTypes.string,
+    title:PropTypes.string.isRequired,
     about:PropTypes.string,
     home:PropTypes.string
+}
+
+NavBar.defaultProps={
+    title:"TextAudit",
+    home: "Home",
+    about:"About Us"
 }
